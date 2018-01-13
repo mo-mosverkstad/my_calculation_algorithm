@@ -17,7 +17,8 @@ def combinations(contents, comb_list, all_list):
             new_l.append(c)
             combinations(new_c, new_l, all_list)
 
-all_list = []
-combinations([1,2,3,4,5], [], all_list)
-for i in range(len(all_list)): print('%4d, %s'%(i, str(all_list[i])))
-print('---- total number: %d ----'%(len(all_list)))
+def private_test():
+    all_list = []
+    combinations([1,2,3,4,5], [], all_list)
+    for i in range(len(all_list)): print('%4d, %s'%(i, str(all_list[i])))
+    print('---- total number: %d ----'%(len(all_list)))
