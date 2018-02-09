@@ -2,7 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\varieties",
-    "\\varieties\\combination"
+    "\\varieties\\combination",
+    "\\varieties\\test"
   ],
   "SelectedNode": "\\varieties\\combination\\guessNumber.py",
   "PreviewInSolutionExplorer": false
