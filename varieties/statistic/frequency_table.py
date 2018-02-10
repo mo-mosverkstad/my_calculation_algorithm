@@ -6,5 +6,3 @@ def all_list(whole_list):
         else:
             d[i] = 1
     return d
-
-print(all_list([1,1,2,2,2,1,2,1,2,1,2]))

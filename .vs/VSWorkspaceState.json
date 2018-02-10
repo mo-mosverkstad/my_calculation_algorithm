@@ -3,8 +3,9 @@
     "",
     "\\varieties",
     "\\varieties\\combination",
+    "\\varieties\\statistic",
     "\\varieties\\test"
   ],
-  "SelectedNode": "\\varieties\\combination\\guessNumber.py",
+  "SelectedNode": "\\varieties\\statistic\\find_mode.py",
   "PreviewInSolutionExplorer": false
 }
