@@ -1,4 +1,5 @@
 import copy
+import datetime
 
 def __comb_iter(contents, comb_list, all_list):
     if len(contents) == 0:
@@ -67,3 +68,40 @@ def average_in_statistic_table(d):
         num += v
         sum += holder
     return sum/num
+
+def middle_value_in_frequncy_table(ft): # ft means frequncy table
+    result = list()
+    for x, f in ft.items():
+        for v in range(f):
+            result.append(x)
+    return middle_value(result)
+
+def mode_in_freq_table(Table):
+    max_value = find_max(list(Table.values()))
+    for k,v in Table.items():
+        if v == max_value:
+            return k
+
+def __inner_time_change(base_time, time_delta_days, time_delta_seconds, future_or_not):
+    if future_or_not:
+        return base_time + datetime.timedelta(time_delta_days, time_delta_seconds)
+    else:
+        return base_time - datetime.timedelta(time_delta_days, time_delta_seconds)
+
+def __outer_time_change(date1,time1,days2,time2,operator):
+    o = False
+    date1 = date1.split('-')
+    time1 = time1.split(':')
+    time2 = time2.split(':')
+    base_time = datetime.datetime(int(date1[0]),int(date1[1]),int(date1[2]),int(time1[0]),int(time1[1]),int(time1[2]))
+    if operator == '+':
+        o = True
+    elif operator == '-':
+        o = False
+    new_time = __inner_time_change(base_time,int(days2),int(time2[0])*60*60+int(time2[1])*60+int(time1[2]),o)
+    return str(new_time)
+
+def time_change(t1,t2,o):
+    t1 = t1.split(' ')
+    t2 = t2.split(' ')
+    return __outer_time_change(t1[0],t1[1],t2[0],t2[1],o)

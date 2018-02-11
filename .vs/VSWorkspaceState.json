@@ -4,8 +4,9 @@
     "\\varieties",
     "\\varieties\\combination",
     "\\varieties\\statistic",
-    "\\varieties\\test"
+    "\\varieties\\test",
+    "\\varieties\\time"
   ],
-  "SelectedNode": "\\varieties\\statistic\\find_mode.py",
+  "SelectedNode": "\\varieties\\time\\the_time.py",
   "PreviewInSolutionExplorer": false
 }
