@@ -1,12 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\varieties",
-    "\\varieties\\combination",
-    "\\varieties\\statistic",
-    "\\varieties\\test",
-    "\\varieties\\time"
+    "\\monte_carlo_algorithm"
   ],
-  "SelectedNode": "\\guess.py",
+  "SelectedNode": "\\monte_carlo_algorithm\\same_edged_triangel_area.py",
   "PreviewInSolutionExplorer": false
 }
